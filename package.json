@@ -58,15 +58,21 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/compat": "^1.2.7",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.22.0",
     "@evilmartians/lefthook": "^1.5.0",
+    "@jest/globals": "^29.7.0",
     "@react-native/eslint-config": "^0.78.0",
     "@release-it/conventional-changelog": "^9.0.2",
+    "@testing-library/react-native": "^13.2.0",
     "@types/jest": "^29.5.5",
     "@types/react": "^19.0.12",
+    "babel-jest": "^29.7.0",
     "commitlint": "^19.6.1",
     "del-cli": "^5.1.0",
     "eslint": "^9.22.0",
@@ -79,6 +85,7 @@
     "react-native-builder-bob": "^0.38.3",
     "react-native-mmkv": "^3.0.0",
     "react-native-vision-camera": "^4.0.0",
+    "react-test-renderer": "19.0.0",
     "release-it": "^17.10.0",
     "typescript": "^5.2.2"
   },
@@ -97,6 +104,9 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|my-project|react-native-button)/)"
     ]
   },
   "commitlint": {
