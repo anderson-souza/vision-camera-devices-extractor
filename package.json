@@ -1,6 +1,6 @@
 {
   "name": "react-native-vision-camera-devices-extractor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This Lib extract the Camera Devices to add in a open-source database",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
