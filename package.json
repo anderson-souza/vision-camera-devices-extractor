@@ -77,12 +77,16 @@
     "react": "19.0.0",
     "react-native": "0.79.2",
     "react-native-builder-bob": "^0.38.3",
+    "react-native-mmkv": "^3.0.0",
+    "react-native-vision-camera": "^4.0.0",
     "release-it": "^17.10.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-mmkv": "*",
+    "react-native-vision-camera": "*"
   },
   "workspaces": [
     "example"
