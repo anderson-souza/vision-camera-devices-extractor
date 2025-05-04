@@ -1,12 +1,13 @@
-import { multiply } from 'react-native-vision-camera-devices-extractor';
+import { useExtractCameraDevices } from 'react-native-vision-camera-devices-extractor';
 import { Text, View, StyleSheet } from 'react-native';
-
-const result = multiply(3, 7);
+import { useMMKV } from 'react-native-mmkv';
 
 export default function App() {
+  useExtractCameraDevices();
+  const storage = useMMKV();
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>{storage.getString('RN_camera_devices')}</Text>
     </View>
   );
 }
