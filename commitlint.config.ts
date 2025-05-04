@@ -6,7 +6,7 @@ const Configuration: UserConfig = {
   parserPreset: 'conventional-changelog-atom',
   formatter: '@commitlint/format',
   rules: {
-    'footer-empty': [RuleConfigSeverity.Error, 'never'],
+    'footer-empty': [RuleConfigSeverity.Error, 'always'],
     'scope-empty': [RuleConfigSeverity.Error, 'never'],
   },
   // ...
